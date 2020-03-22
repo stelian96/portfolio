@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #272341;
+  font-family: Montserrat, sans-serif;
+  scroll-behavior: smooth;
+}
+/* HERO */
+h1 span {
+  background-image: linear-gradient(135deg, #02aab0, #00cdac);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn:hover {
+  background-color: white;
+}
+.btn:hover span {
+  background: -webkit-linear-gradient(135deg, #02aab0, #00cdac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btnLive {
+  border-color: #00cdac;
+}
+.btnCode span,
+.btnLive span {
+  background: -webkit-linear-gradient(135deg, #02aab0, #00cdac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btnLive:hover span {
+  background: -webkit-linear-gradient(135deg, white, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btnLive:hover {
+  background: -webkit-linear-gradient(135deg, #02aab0, #00cdac);
+}
+
+/* ABOUT */
+
+#about {
+  background: linear-gradient(135deg, #02aab0, #00cdac);
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 600px));
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 870px) {
+  #about {
+    padding-bottom: 10vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  }
+}
+
+/* PROJECTS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 650px));
+  grid-gap: 20px;
+  justify-content: center;
+}
+@media only screen and (max-width: 870px) {
+  .about,
+  .projects {
+    display: block;
+  }
+}
+
+/* CONTACT */
+.contact {
+  background: linear-gradient(135deg, #02aab0, #00cdac);
+}
+@media only screen and (min-width: 870px) {
+  .contact {
+    padding-top: 15vh;
+    -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #333;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+footer hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  width: 50%;
+  border-top: 2px solid hsla(0, 0%, 100%, 0.1);
+}
